@@ -1,13 +1,7 @@
-<footer style="background-color:#1e3799; color:white; text-align:center; padding:40px; font-family:'Roboto', sans-serif;">
-  <h1 style="font-size:3em; margin:0;">The end</h1>
-  <p style="font-size:1.3em; margin:10px 0;">No copyright.</p>
-  <nav style="margin-top:15px;">
-  </nav>
+<footer class="site footer">
+  <p>&copy; <?php echo date ('Y'); ?> <?php bloginfo('name'); ?> | ALL Rights Reserved</p>
+  <p><a href="#top" class="back-to-top">Back to Top</a></p>
 </footer>
-
-
-
-
-
+<?php wp_footer(); ?>
 </body>
 </html>
