@@ -9,11 +9,11 @@
 <body>
 
   
-<header class="site-header">
-    <nav class="site-nav">
+<header class = "site-header">
+    <nav class = "site-nav">
 
-    <?php wp_nav_menu(array('theme_location' => 'primary',
-  'menu_call' => 'main-menu'
+    <?php wp_nav_menu(array("theme_location" => "primary",
+  "menu_call" => "main-menu"
   ) ); 
   ?>
 

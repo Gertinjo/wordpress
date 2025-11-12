@@ -1,4 +1,4 @@
-<footer class="site footer">
+<footer class="site-footer">
   <p>&copy; <?php echo date ('Y'); ?> <?php bloginfo('name'); ?> | ALL Rights Reserved</p>
   <p><a href="#top" class="back-to-top">Back to Top</a></p>
 </footer>
