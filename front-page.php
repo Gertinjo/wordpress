@@ -33,7 +33,7 @@ get_header() ?>
           Start Building
         </button>
         <button class="px-10 py-4 border-2 border-cyan-500 text-cyan-400 rounded-full font-bold lshunim-i-lemuar hover:bg-cyan-500 hover:text-black text-lg">
-          View Docs
+          View Our AI
         </button>
       </div>
     </div>
@@ -93,7 +93,7 @@ get_header() ?>
           <div class="ngjyre-zezulte rounded-2xl p-8 h-96 flex items-center justify-center">
             <div class="text-center">
               <div class="text-6xl mb-4">🚀</div>
-              <p class="text-xl text-slate-300">Pioneering the future of cloud technology</p>
+              <p class="text-xl text-slate-300">Engineering the future of technology</p>
             </div>
           </div>
         </div>
@@ -151,6 +151,32 @@ get_header() ?>
       </div>
     </div>
   </section>
+    <section class="py-24 bg-black border-t border-cyan-500/20">
+        <main class = "blog-list">
+    <h1 class = "text-5xl font-bold text-center mb-4 teksti-gradient">Latest Blog post </h1>
+
+    <?php if (have_posts()) : ?>
+        <?php while(have_posts()) : the_post() ?>
+        <article <?php post_class('blog-item') ?>>
+        <h2 class = "text-5xl font-bold text-center mb-4 teksti-gradient">
+        <a href="<?php the_permalink();?>"><?php the_title();?></a>
+        
+    </h2>
+    <p class = "blog-item_exerpt">
+        <?php the_excerpt(); ?>
+    </p>
+    </article>
+    <?php endwhile; ?>
+
+    <nav class = "pagination">
+        <?php the_posts_pagination(); ?>
+    </nav>
+
+<?php else : ?>
+    <p>No post found</p>
+    <?php endif; ?>
+</main>
+</section>
 
 
   <section class="py-24 bg-black border-t border-cyan-500/20">
